@@ -1,0 +1,739 @@
+:root {
+    --primarycolor: #f2f2f2;
+    --secundarycolor: #4b3b47;
+    --thirdcolor: #b9d2b1;
+    --fourthcolor: #6a6262;
+    --fifthcolor: #f1d6b8;
+    --sixthcolor: #2e86ab;
+    --buttoncolor: #eecf60;
+    --headercolor: #f8efed;
+    --lettercolor: #5e5e5e;
+    --menucolor: #099fff;
+    --menubackground: #18181b;
+    --linecolor: #673506;
+
+}
+
+body{
+    background-color: var(--primarycolor);
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+main{
+    margin: 0;
+    padding: 0;
+
+}
+p{
+    color: var(--lettercolor);
+    padding: 5px;
+}
+h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--lettercolor);
+    margin: 0;
+}
+/*Contenedor de la cabezera de Index.html*/
+.header{
+    background-color: var(--headercolor);
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5 rem;
+}
+/* Contenedor de la cabezera del resto de paginas */
+.header-2{
+    background-color: var(--headercolor);
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 5 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* Contenedor del logo tanto en cabecera del Index como del resto de paginas */
+.logo{
+    float: left;
+    border: transparent;
+}
+.data{
+    height: 100%;
+    left: 80%;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 1rem;
+
+}
+.data a{
+    display: block;
+    font-size: 1.2em;;
+    color: var(--lettercolor);
+}
+.data a:hover{
+    color: var(--sixthcolor);
+}
+.button{
+    display: block;
+    width: 5rem;
+    font-family: inherit;
+    letter-spacing: 3px;
+    font-weight: 1rem;
+    font-size: 1rem;
+    align-items: center;
+    background-color: var(--buttoncolor);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    color: var(--lettercolor);
+    text-decoration: none;
+
+}
+.button:hover{
+    background-color: transparent;
+    border: 2px solid var(--sixthcolor);
+    color: var(--sixthcolor);
+    
+}
+.wallpaper{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(Imagenes/london-wallpaper.jpg);
+    margin-top: 5rem;
+    width: 100%;
+    height: 45rem;
+    /*max-width: 1000px;*/
+    min-width: 320px;
+    text-align: center;
+    padding: 25px 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--headercolor);
+}
+.wallpaper p{
+    font-size: 1.5em;
+    color: var(--primarycolor);
+    
+}
+.wallpaper h1{
+    font-size: 50px;
+    padding: 20px 0;
+    font-style: inherit;
+    letter-spacing: 5px;
+}
+.wallpaper-rooms{
+    background-image: url(Imagenes/room-bed.jpg);
+    width: 100%;
+    height: 45rem;
+    text-align: center;
+    padding: 25px 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: var(--lettercolor);
+    letter-spacing: 1px;
+    
+}
+/* Definimos el parrafo de #Habs en Rooms.html */
+.pre-back-rooms{
+    background: rgba(0, 0, 0, .3);
+    margin: 0;
+    padding: 0;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.Habs{
+    color: #0A0A0A;
+    font-size: 30px;
+    letter-spacing: 0.96px;
+    line-height: 1.4;
+    position: relative;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    border-bottom: var(--linecolor) solid 1px;
+
+}
+/* Para el cuadro en las paginas de habitaciones */
+.back-rooms{
+    width: 100%;
+    height: 20rem;
+    background: rgba(0, 0, 0, .3);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.rooms-items-container{
+    background-color: var(--fifthcolor);
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+
+}
+/* Lista de features de las habitaciones */
+.rooms-items-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px;
+    margin: 0;
+}
+/* Elementos de la lista */
+.rooms-items{
+    display: block;
+    margin: 0;
+    padding: 20px;
+}
+/* Define posicion y estilos del menu en Index */
+.menu{
+    background-color: var(--menubackground);
+    height: 4rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    /* position: sticky; */ 
+}
+/* DEfine posición y estilos del menu en resto de páginas */
+.menu2{
+    display: flex;
+    justify-content: center;
+    background-color: var(--headercolor);
+    height: 4rem;
+    width: 55%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+/*Especificaciones generales del Menu*/
+.main-list{
+    list-style: none;
+    background-color: var(--headercolor);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+    padding: 15px;
+}
+/* Items del Menu */
+.list-element{
+    position: relative;
+    border-radius: 15px;
+    background: var(--buttoncolor);
+    padding: 10px;
+    
+
+}
+.list-element:hover{
+    background-color: transparent;
+    border: 2px solid var(--sixthcolor);
+    color: var(--sixthcolor);
+}
+/* Opciones desplegables del menu */
+.sub-list{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    list-style: none;
+    /* background-color: var(--buttoncolor); */
+    justify-content: center;
+    padding: 5px;
+    width: max-content;    
+    border-radius: 10px;
+    
+
+}
+.sub-list li{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--buttoncolor);
+
+}
+.sub-list li:hover{
+    background-color: var(--fifthcolor);
+    border: 2px solid var(--sixthcolor);
+}
+.sub-list li a:hover{
+    color: var(--sixthcolor);
+}
+/* Aqui hacemos que sub-list se muestra cuando el cursor pasa por encima de list-element */
+.list-element:hover .sub-list{
+    display: flex;
+}
+/* Damos estilo para oscurecer la imagen de backgroud */
+img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+/* Cuadro donde alojamos el mapa y la información de dirección */
+.maps{
+    background-image: url(Imagenes/europeMap.jpg);
+    border-top: 2px solid var(--buttoncolor);
+    border-bottom: 2px solid var(--buttoncolor);
+    background-color: var(--thirdcolor);
+    width: 100%;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--buttoncolor);
+
+}
+.btnmaps{
+  left: 50%;
+}
+.btnmaps a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: var(--lettercolor);
+    display: block;
+    width: 16rem;
+    height: 1.5rem;
+    left: 50%;
+    font-family: inherit;
+    letter-spacing: 3px;
+    justify-content: center;
+    font-weight: 1rem;
+    font-size: 1rem;
+    background-color: var(--buttoncolor);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-decoration: none;
+   
+}
+.btnmaps a:hover{
+    background-color: var(--fifthcolor);
+    border: 2px solid var(--sixthcolor);
+    color: var(--sixthcolor);
+
+}
+.realmap{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.rooms-btn{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: var(--lettercolor);
+    display: block;
+    width: 16rem;
+    height: 1.5rem;
+    left: 50%;
+    font-family: inherit;
+    letter-spacing: 3px;
+    justify-content: center;
+    font-weight: 1rem;
+    font-size: 1rem;
+    background-color: var(--buttoncolor);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.rooms-btn:hover{
+    background-color: var(--fifthcolor);
+    border: 2px solid var(--sixthcolor);
+    color: var(--sixthcolor);
+}
+.main-sub-1{
+    background-color: var(--primarycolor);
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+.main-sub-1 img{
+    height: 250px;
+    width: 400px;
+}
+.main-sub-2{
+    background-color: var(--fifthcolor);
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+.main-sub-2 img{
+    height: 250px;
+    width: 400px;
+}
+.main-sub-3{
+    background-color: var(--headercolor);
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.main-sub-3 img{
+    height: 250px;
+    width: 400px; 
+}
+.texto-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 5px;
+}
+h4{
+    color: #0A0A0A;
+    font-size: 30px;
+    letter-spacing: 0.96px;
+    line-height: 1.4;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    border-bottom: var(--linecolor) solid 1px;
+
+}
+h6{
+    color: var(--menubackground);
+    font-size: 30px;
+    letter-spacing: 0.96px;
+    line-height: 1.4;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    border-bottom: var(--buttoncolor) solid 1px;
+}
+footer{
+    background-color: #2b2d2e;
+    color: white;
+}
+.double-basic-title{
+    background-color: var(--primarycolor);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.access{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.wrapper login{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background: var(--primarycolor);
+    box-shadow: 0 0 5px #999999;
+}
+.login .col-left,
+.login .col-right{
+    padding: 30px;
+    display: flex;
+}
+.login .col-left{
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: var(--thirdcolor);
+}
+.login .col-right{
+    padding: 60px 30px;
+    width: 50%;
+    margin-left: -10%;
+}
+.login .login-text{
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+}
+.login .login-text h2{
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.login .login-text p{
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.login .login-text .login-btn{
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+    padding: 7px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: .3s;
+
+}
+.login .login-text .login-btn:hover{
+    color: #2aa15f;
+    box-shadow: inset 150px 0 0 0 #ffffff;
+}
+.login .login-form{
+    position: relative;
+    width: 100%;
+}
+.login .login-form h2{
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+.login .login-form p{
+    margin: 0 0 10px 0;
+    text-align: left;
+    color: #666666;
+    font-size: 15px;
+}
+
+.pre-footer{
+    padding-top: 2rem;
+}
+.footer-contact{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+}
+.footer-contact a{
+    color: white;
+}
+.footer-contact a:hover{
+    color: var(--sixthcolor);
+}
+.main-footer{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-footer p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+.main-footer a{
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+    font-size: 40px;
+    padding-left: 10px;
+}
+.main-footer a:hover{
+    color: var(--sixthcolor);
+}
+.post-footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+.nav-footer{
+    display: flex;
+}
+.nav-footer a{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.nav-footer a:hover{
+    color: var(--buttoncolor);
+}
+.firma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* DIV QUE MUESTRA QUE LA PAGINA ESTA EN CONSTRUCCIÓN */
+.coming-soon{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+}
+.coming-soon img{
+    width: 560px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.coming-soon-text{
+    display: flex;
+    width: 50%;
+
+}
+.coming-soon-text-tittle{
+    font-family: inherit;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--sixthcolor);
+    border-bottom: solid var(--linecolor) 0.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+
+}
+.coming-soon-text-p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+/* Damos forma al main de la pagina contact.html */
+#contact-main{
+    display: flex;
+    background-color: var(--primarycolor);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+/* Damos forma al div que contiene el formulario de reserva */
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    align-items: flex-start;
+    background-color: var(--thirdcolor);
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: .3s;
+}
+#booking-form-title{
+    color: var(--secundarycolor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+label{
+    color: #2b2d2e;
+    font-size: 14px;
+    font-weight: 400;
+}
+.btns-form{
+    display: flex;
+}
+.reset-btn{
+    display: flex;
+}
+.submit-btn{
+    display: flex;
+}

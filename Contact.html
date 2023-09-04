@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style00.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header-2">
+        <div class="Logo">
+            <a href="Index.html" class="logo"><img src="Imagenes/LogoS.png" alt="Logo"></a>
+        </div>
+        <nav class="menu2">
+            <!--Start menu principal-->
+            <ul class="main-list">
+                <li class="list-element"><a href="Index.html">Inicio</a></li>
+                <li class="list-element"><a href="Rooms.html">Habitaciones</a>
+                    <!--Start del menu desplegable de Habitaciones-->
+                    <ul class="sub-list">
+                        <li><a href="DBasic.html">Doble Básica</a></li>
+                        <li><a href="DSuperior.html">Doble Superior</a></li>
+                        <li><a href="JSuite.html">Junior Suite</a></li>
+                    </ul>
+                </li>
+                <li class="list-element"><a href="Situation.html">Situación</a>
+                    <ul class="sub-list">
+                        <li><a href="City-centre.html">Centro Ciudad</a></li>
+                    </ul>
+                </li>
+                <li class="list-element"><a href="Services.html">Servicios</a>
+                    <ul class="sub-list">
+                        <li><a href="Excursiones.html">Excursiones</a></li>
+                        <li><a href="Restaurants.html">Restaurantes</a></li>
+                        <li><a href="Pool.html">Piscina Relax</a></li>
+                    </ul>
+                </li>
+                <li class="list-element"><a href="Index.html">Historia del Hotel</a></li>
+                <li class="list-element"><a href="Contact.html">Contacto</a></li>
+            </ul> 
+        </nav>
+        </header>
+<main id="contact-main">
+    <!-- Formulario de reserva de Hotel -->
+    <div class="booking-form">
+        <tr class="booking-form-title">
+            <td colspan="3"><h4 id="booking-form-title">Atlantic Hotel - Booking form</h4></td>
+        </tr>
+        <!-- Datos principales del huésped -->
+        <tr class="booking-form-data">
+            <td><label for="Name">Nombre:</label></td>
+            <td colspan="2">
+                <input type="text" name="Nombre" id="nombre" placeholder="Introduzca su nombre">
+            </td>
+        </tr>
+        <tr class="booking-form-data">
+            <td><label for="Last-name">Apellido:</label></td>
+            <td colspan="2">
+                <input type="text" name="Apellido" id="apellido" placeholder="Introduzca sus apellidos">
+            </td>
+        </tr>
+        <tr class="booking-form-data">
+            <td><label for="phone">Teléfono:</label></td>
+            <td colspan="2">
+                <input type="text" name="Telf" id="telf" placeholder="Introduzca su teléfono movil">
+            </td>
+        </tr>
+        <tr class="booking-form-data">
+            <td><label for="email">Email:</label></td>
+            <td colspan="2">
+                <input type="text" name="Email" id="email" placeholder="Dirección correo electrónico">
+            </td>
+        </tr>
+        <tr class="booking-form-data">
+            <td><label for="Check-In">Check - In:</label></td>
+            <td colspan="2">
+                <input type="date" id="check-in">
+            </td>
+        </tr>
+        <tr class="booking-form-data">
+            <td><label for="Check-Out">Check - Out</label></td>
+            <td colspan="2"><input type="date" id="check-out"></td>
+        </tr>
+        
+        <tr class="booking-form-data">
+            <td><label for="regimen">Régimen:</label></td>
+            <td colspan="2" class="meal-plan">
+                <label for="HA">Solo Alojamiento</label><input type="radio" name="regimen" value="HA">
+                <label for="HD">Alojamiento y Desayuno</label><input type="radio" name="regimen" value="HD">
+                <label for="MP">Media Pensión</label><input type="radio" name="regimen" value="MP">
+                <label for="suple">Cama supletoria</label>
+                <label for="suple">Si</label><input type="radio" name="extrabed" value="extbed">
+                <label for="suple">No</label><input type="radio" name="extrabed" value="extbed">
+            </td>
+        </tr>
+        <div class="btns-form">
+            <tr class="booking-form-data">
+            <td colspan="2"><input type="reset" value="Borrar" class="reser-btn"></td>
+            <td colspan="2"><input type="submit" value="Enviar" class="submit-btn"></td>
+            </tr> 
+        </div>
+        
+    </div>
+</main>        
+<footer>
+    <div class="pre-footer">
+        <a href="Acess.html"     class="button" target="_blank">ACCEDER</a>
+        <div class="footer-contact">
+            <a href="tel:34960454545">+ 34 960 45 45 45</a>
+            <a href="mailto:reservas@atlantichotel.com">reservas@atlantichotel.com</a>
+        </div>
+    </div>
+    <div class="main-footer">
+        <p>visita nuestro recien estrenado restaurante <a href="#">Duncan & Mills</a></p>
+
+    </div>
+    <div class="post-footer">
+        <nav class="nav-footer">
+            <a href="#">Quiénes somos</a>
+            <a href="#">Agencias y empresas</a>
+            <a href="#">Aviso legal</a>
+            <a href="#">Política de cancelación</a>
+        </nav>
+    </div>
+    <br>  
+    <br>
+    <br>     
+    <div class="firma">desarrollado por ABDev</div>
+   </footer>    
+</body>
+
+</html>
